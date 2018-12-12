@@ -2,6 +2,19 @@
 
 This example demonstrates how to use triggers in xamarin.forms listview.
 
+```
+<Label Text="{Binding ContactName}">
+    <Label.Triggers>
+       <DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="true">
+         <Setter Property="TextColor" Value="Red"/>
+       </DataTrigger>
+       <DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="false">
+         <Setter Property="TextColor" Value="Yellow"/>
+       </DataTrigger>
+     </Label.Triggers>
+</Label>
+
+```
 ## Requirements to run the demo
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)

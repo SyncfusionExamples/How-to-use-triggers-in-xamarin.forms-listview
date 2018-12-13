@@ -4,19 +4,19 @@ This example demonstrates how to use triggers in xamarin.forms listview.
 
 ```
 <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" >
-	<syncfusion:SfListView.ItemTemplate>
-    	<DataTemplate>
-        	<ViewCell>
-			  <Label Text="{Binding ContactName}">
-    			 <Label.Triggers>
-       				<DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="true">
-         						<Setter Property="TextColor" Value="Red"/>
-       				</DataTrigger>
-       				<DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="false">
-         						<Setter Property="TextColor" Value="Yellow"/>
-       				</DataTrigger>
-     			</Label.Triggers>
-			  </Label>
+    <syncfusion:SfListView.ItemTemplate>
+        <DataTemplate>
+	    <ViewCell>
+               <Label Text="{Binding ContactName}">
+	         <Label.Triggers>
+		    <DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="true">
+		        <Setter Property="TextColor" Value="Red"/>
+	            </DataTrigger>
+		    <DataTrigger TargetType="Label" Binding="{Binding Favorite}" Value="false">
+                        <Setter Property="TextColor" Value="Yellow"/>
+	            </DataTrigger>
+		  </Label.Triggers>
+                </Label>
             </ViewCell>
         </DataTemplate>
     </syncfusion:SfListView.ItemTemplate>

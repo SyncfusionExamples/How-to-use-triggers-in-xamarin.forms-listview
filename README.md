@@ -2,6 +2,8 @@
 
 This example demonstrates how to use triggers in xamarin.forms listview.
 
+You can refer [How to use triggers in xamarin.forms listview?](https://www.syncfusion.com/kb/10020/how-to-use-triggers-in-xamarin-forms-listview) for more details
+
 ```
 <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" >
     <syncfusion:SfListView.ItemTemplate>
